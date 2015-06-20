@@ -56,3 +56,6 @@ echo "To call the base ant, if it is installed, you can call it directly: /usr/b
 %changelog
 * Sun Jun 30 2013 Nathan Milford <nathan@milford.io> - 1.9.1-1
 - First go at it.
+
+* Fri Jun 19 2015 Chris Kast <chriskast@gmail.com> - 1.9.4-1
+- Update version to 1.9.4; changed bin URL to one that actually works; removed jkd dependency
