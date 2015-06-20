@@ -1,25 +1,24 @@
-# To Build: 
+# To Build:
 #
 # sudo yum -y install rpmdevtools && rpmdev-setuptree
 #
-# wget http://apache.spinellicreations.com//ant/binaries/apache-ant-1.9.1-bin.tar.gz -O ~/rpmbuild/SOURCES/apache-ant-1.9.1-bin.tar.gz
-# wget https://raw.github.com/nmilford/rpm-ant19/master/ant19.spec -O ~/rpmbuild/SPECS/ant19.spec
+# wget http://apache.spinellicreations.com//ant/binaries/apache-ant-1.9.4-bin.tar.gz -O ~/rpmbuild/SOURCES/apache-ant-1.9.4-bin.tar.gz
+# wget https://raw.githubusercontent.com/fender4645/rpm-ant19/master/ant19.spec -O ~/rpmbuild/SPECS/ant19.spec
 # rpmbuild -bb ~/rpmbuild/SPECS/ant19.spec
 
 Name:           ant19
-Version:        1.9.1
+Version:        1.9.4
 Release:        1
 Summary:        Ant build tool for Java
 License:        Apache Software License
 URL:            http://ant.apache.org/
 Group:          Development/Build Tools
 Source0:        apache-ant-%{version}-bin.tar.gz
-Requires:       jdk
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
-Ant is a platform-independent build tool for java. 
+Ant is a platform-independent build tool for java.
 
 CentOS 5 base installs Apache 1.6, which can be limiting for newer projects.
 
