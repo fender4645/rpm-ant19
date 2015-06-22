@@ -13,8 +13,8 @@ To Build:
 
 `sudo yum -y install rpmdevtools && rpmdev-setuptree`
 
-`wget http://apache.spinellicreations.com//ant/binaries/apache-ant-1.9.1-bin.tar.gz -O ~/rpmbuild/SOURCES/apache-ant-1.9.1-bin.tar.gz`
+`wget http://archive.apache.org/dist/ant/binaries/apache-ant-1.9.4-bin.tar.gz -O ~/rpmbuild/SOURCES/apache-ant-1.9.4-bin.tar.gz`
 
-`wget https://raw.github.com/nmilford/rpm-ant19/master/ant19.spec -O ~/rpmbuild/SPECS/ant19.spec`
+`wget https://raw.github.com/fender4645/rpm-ant19/master/ant19.spec -O ~/rpmbuild/SPECS/ant19.spec`
 
 `rpmbuild -bb ~/rpmbuild/SPECS/ant19.spec`
